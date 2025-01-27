@@ -1,0 +1,103 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Model Practise</title>
+  </head>
+  <body>
+    <div class="pagination">
+      <button class="page">Back</button>
+      <button class="num">1</button>
+      <button class="num">2</button>
+      <button class="num">3</button>
+      <button class="num">4</button>
+      <button class="num">5</button>
+      <button class="page">Next</button>
+    </div>
+
+    <div class="stretch">
+      <button class="stretch-button">Stretch</button>
+    </div>
+
+    <div class="Click">
+      <button class="click-button">Shadow</button>
+    </div>
+
+    <div class="Numbers">
+      <button class="blocks">One</button>
+      <button class="blocks">Two</button>
+      <button class="blocks">Three</button>
+    </div>
+  </body>
+</html>
+
+<style>
+  .page {
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    cursor: pointer;
+  }
+  .num {
+    border: none;
+    background-color: white;
+    color: rgb(84, 0, 84);
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  .stretch-button {
+    background-color: green;
+    border: none;
+    color: white;
+    margin-top: 10px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    transition: padding-left 1s, padding-right 1s, padding-top 1s,
+      padding-bottom 1s;
+    cursor: pointer;
+  }
+  .stretch-button:hover {
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .click-button {
+    background-color: green;
+    color: white;
+    border: none;
+    font-size: 18px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    cursor: pointer;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+    margin-top: 10px;
+  }
+  .click-button:active {
+    margin-top: 3px;
+    margin-left: 3px;
+    box-shadow: none;
+  }
+  .blocks {
+    background-color: green;
+    border: none;
+    color: white;
+    margin-top: 10px;
+    margin-right: 7px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    cursor: pointer;
+    transition: padding-left 0.15s, padding-right 0.15s;
+  }
+  .blocks:hover {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+</style>
